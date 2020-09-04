@@ -11,11 +11,12 @@ using System.Windows.Forms;
 
 namespace Winform_SQL_DB_Project_B
 {
-    public partial class index : Form
+    public partial class Form1 : Form
     {
-        public index()
+        public Form1()
         {
             InitializeComponent();
+            Form1_TreeView(); //public partial class Form1 : Form
         }
     }
 }
