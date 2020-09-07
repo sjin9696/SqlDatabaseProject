@@ -38,17 +38,67 @@ namespace Winform_SQL_DB_Project_B
 
         }
 
+        private void dataGridView_CellValueChanged(object sender, DataGridViewCellEventArgs e) // 곽상우
+        {
+            dataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.BackColor = System.Drawing.Color.Yellow;
+        }
+
         private void button_Updata_Click(object sender, EventArgs e)
         {
+            List<string> Changed_Value_Row = new List<string>();
+            List<string> Changed_Value_Column = new List<string>();
+            int rowsIndex = dataGridView.Rows.Count;
+            int columnsIndex = dataGridView.Columns.Count;
+            
+            for (int i = 0; i < rowsIndex; i++)
+            {
+                for (int j = 0; j < columnsIndex; j++)
+                {
+                    if (dataGridView.Rows[i].Cells[j].Style.BackColor == System.Drawing.Color.Yellow)
+                    {
+                        Changed_Value_Row.Add(""+i);
+                        Changed_Value_Column.Add(""+j);
+                    }
+                }
+            }
 
+            for (int i = 0; i < Changed_Value_Row.Count; i++)
+            {
+                Console.WriteLine("Row = " + Changed_Value_Row[i] + ", Column = " + Changed_Value_Column[i]);
+            }
+
+            /*string update_query = null;
+
+            for (int i = 0; i < Changed_Value.Count; i++)
+            {
+                if (i > 0)
+                {
+                    if (true)
+                    {
+
+                    }
+                    else
+                    {
+
+                    }
+                }
+                else if (i == 0)
+                {
+                    update_query += Changed_Value[i]"_" + temp[1];
+                }
+                else
+                {
+                    Console.WriteLine("Update_Click = 잘못된입력");
+                }
+            }*/
+
+            /*textBox1.Text = dataGridView.Rows[rowIndex].Cells[3].Value.ToString();
+            textBox2.Text = dataGridView.Rows[rowIndex].Cells[4].Value.ToString();
+            textBox3.Text = dataGridView.Rows[rowIndex].Cells[5].Value.ToString();
+            textBox4.Text = dataGridView.Rows[rowIndex].Cells[6].Value.ToString();*/
         }
 
         private void button_Delete_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

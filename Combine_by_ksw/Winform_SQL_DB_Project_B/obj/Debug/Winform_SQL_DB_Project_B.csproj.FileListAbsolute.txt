@@ -73,3 +73,16 @@ C:\Users\KSW\Desktop\새 폴더\Winform_SQL_DB_Project_B\Winform_SQL_DB_Project_
 C:\Users\KSW\Desktop\새 폴더\Winform_SQL_DB_Project_B\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.csproj.CopyComplete
 C:\Users\KSW\Desktop\새 폴더\Winform_SQL_DB_Project_B\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.exe
 C:\Users\KSW\Desktop\새 폴더\Winform_SQL_DB_Project_B\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.pdb
+C:\Users\KSW\Desktop\새 폴더\Combine_by_ksw\Winform_SQL_DB_Project_B\bin\Debug\Winform_SQL_DB_Project_B.exe.config
+C:\Users\KSW\Desktop\새 폴더\Combine_by_ksw\Winform_SQL_DB_Project_B\bin\Debug\Winform_SQL_DB_Project_B.exe
+C:\Users\KSW\Desktop\새 폴더\Combine_by_ksw\Winform_SQL_DB_Project_B\bin\Debug\Winform_SQL_DB_Project_B.pdb
+C:\Users\KSW\Desktop\새 폴더\Combine_by_ksw\Winform_SQL_DB_Project_B\bin\Debug\Oracle.DataAccess.dll
+C:\Users\KSW\Desktop\새 폴더\Combine_by_ksw\Winform_SQL_DB_Project_B\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\KSW\Desktop\새 폴더\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.csprojAssemblyReference.cache
+C:\Users\KSW\Desktop\새 폴더\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.Form1.resources
+C:\Users\KSW\Desktop\새 폴더\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.Properties.Resources.resources
+C:\Users\KSW\Desktop\새 폴더\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.csproj.GenerateResource.cache
+C:\Users\KSW\Desktop\새 폴더\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.csproj.CoreCompileInputs.cache
+C:\Users\KSW\Desktop\새 폴더\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.csproj.CopyComplete
+C:\Users\KSW\Desktop\새 폴더\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.exe
+C:\Users\KSW\Desktop\새 폴더\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.pdb

@@ -141,12 +141,13 @@
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView.MultiSelect = false;
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowTemplate.Height = 23;
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView.Size = new System.Drawing.Size(529, 545);
             this.dataGridView.TabIndex = 0;
-            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
+            this.dataGridView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellValueChanged);
             // 
             // tabPage_Middle_textbox
             // 
@@ -257,7 +258,7 @@
             this.textBox_Right_Update.Name = "textBox_Right_Update";
             this.textBox_Right_Update.Size = new System.Drawing.Size(188, 21);
             this.textBox_Right_Update.TabIndex = 0;
-            this.textBox_Right_Update.Text = "\"데이터그리드뷰에서 수정\"";
+            this.textBox_Right_Update.Text = "\"셀을 수정하고 눌러주세요\"";
             this.textBox_Right_Update.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button_Updata
