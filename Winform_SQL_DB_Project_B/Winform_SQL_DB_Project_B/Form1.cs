@@ -27,6 +27,7 @@ namespace Winform_SQL_DB_Project_B
         private void button_Sql_exec_Click(object sender, EventArgs e)
         {
             DataManager.Cmd_Oracle(textBox_Right_Sql.Text);
+            dataGridView.DataSource = DataManager.ds.Tables[0];
         }
 
         private void button_Select_Click(object sender, EventArgs e)
@@ -56,7 +57,8 @@ namespace Winform_SQL_DB_Project_B
 
         private void treeView_Left_AfterSelect(object sender, TreeViewEventArgs e)
         {
-
+            DataManager.Tree_Oracle(e.Node.Text);
+            dataGridView.DataSource = DataManager.ds.Tables[0];
         }
     }
 }

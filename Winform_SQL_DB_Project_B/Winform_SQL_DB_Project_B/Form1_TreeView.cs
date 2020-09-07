@@ -14,8 +14,10 @@ namespace Winform_SQL_DB_Project_B
         {
             int length = 5;
             TreeNode table = new TreeNode("Table", 0, 0);
-            for (int i = 1; i <= length; i++)
-                table.Nodes.Add("테이블" + i, i + "번테이블", 0, 0);
+            //for (int i = 1; i <= length; i++)
+            //    table.Nodes.Add("테이블" + i, i + "번테이블", 0, 0);
+            table.Nodes.Add("사원");
+            table.Nodes.Add("대출");
 
             TreeNode proseger = new TreeNode("프로시저", 1, 1);
             for (int i = 1; i <= length; i++)
