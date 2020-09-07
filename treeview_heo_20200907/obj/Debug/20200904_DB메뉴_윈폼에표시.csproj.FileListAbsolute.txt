@@ -1,0 +1,13 @@
+C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\bin\Debug\20200904_DB메뉴_윈폼에표시.exe.config
+C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\bin\Debug\20200904_DB메뉴_윈폼에표시.exe
+C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\bin\Debug\20200904_DB메뉴_윈폼에표시.pdb
+C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\obj\Debug\20200904_DB메뉴_윈폼에표시.csprojAssemblyReference.cache
+C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\obj\Debug\_20200904_DB메뉴_윈폼에표시.Form1.resources
+C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\obj\Debug\_20200904_DB메뉴_윈폼에표시.Properties.Resources.resources
+C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\obj\Debug\20200904_DB메뉴_윈폼에표시.csproj.GenerateResource.cache
+C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\obj\Debug\20200904_DB메뉴_윈폼에표시.csproj.CoreCompileInputs.cache
+C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\obj\Debug\20200904_DB메뉴_윈폼에표시.exe
+C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\obj\Debug\20200904_DB메뉴_윈폼에표시.pdb
+C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\bin\Debug\Oracle.DataAccess.dll
+C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\obj\Debug\20200904_DB메뉴_윈폼에표시.csproj.CopyComplete
+C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\bin\Debug\Oracle.ManagedDataAccess.dll

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20200904_DB메뉴_윈폼에표시", "20200904_DB메뉴_윈폼에표시.csproj", "{D2818EF1-AF4D-4C44-BEF9-CA43B33E1ECE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2818EF1-AF4D-4C44-BEF9-CA43B33E1ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2818EF1-AF4D-4C44-BEF9-CA43B33E1ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2818EF1-AF4D-4C44-BEF9-CA43B33E1ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2818EF1-AF4D-4C44-BEF9-CA43B33E1ECE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22A7B6CE-FC94-47BD-A7D5-8B0CDAFEE7A8}
+	EndGlobalSection
+EndGlobal

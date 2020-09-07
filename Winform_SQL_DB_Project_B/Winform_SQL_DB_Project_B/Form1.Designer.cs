@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("테이블1");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("테이블2");
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("테이블", new System.Windows.Forms.TreeNode[] {
-            treeNode31,
-            treeNode32});
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("프로시저");
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("시퀀스");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("테이블1");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("테이블2");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("테이블", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2});
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("프로시저");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("시퀀스");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel_Left_Treeview = new System.Windows.Forms.Panel();
             this.treeView_Left = new System.Windows.Forms.TreeView();
@@ -97,25 +97,26 @@
             this.treeView_Left.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView_Left.Location = new System.Drawing.Point(0, 0);
             this.treeView_Left.Name = "treeView_Left";
-            treeNode31.Name = "NodesTable1";
-            treeNode31.Text = "테이블1";
-            treeNode32.Name = "NodesTable2";
-            treeNode32.Text = "테이블2";
-            treeNode33.Name = "TreeNodeTable";
-            treeNode33.Text = "테이블";
-            treeNode33.ToolTipText = "테이블 설명입니다.";
-            treeNode34.Name = "TreeNodeProcedure";
-            treeNode34.Text = "프로시저";
-            treeNode34.ToolTipText = "프로시저설명입니다.";
-            treeNode35.Name = "TreeNodeSequence";
-            treeNode35.Text = "시퀀스";
-            treeNode35.ToolTipText = "시퀀스설명입니다.";
+            treeNode1.Name = "NodesTable1";
+            treeNode1.Text = "테이블1";
+            treeNode2.Name = "NodesTable2";
+            treeNode2.Text = "테이블2";
+            treeNode3.Name = "TreeNodeTable";
+            treeNode3.Text = "테이블";
+            treeNode3.ToolTipText = "테이블 설명입니다.";
+            treeNode4.Name = "TreeNodeProcedure";
+            treeNode4.Text = "프로시저";
+            treeNode4.ToolTipText = "프로시저설명입니다.";
+            treeNode5.Name = "TreeNodeSequence";
+            treeNode5.Text = "시퀀스";
+            treeNode5.ToolTipText = "시퀀스설명입니다.";
             this.treeView_Left.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode33,
-            treeNode34,
-            treeNode35});
+            treeNode3,
+            treeNode4,
+            treeNode5});
             this.treeView_Left.Size = new System.Drawing.Size(194, 561);
             this.treeView_Left.TabIndex = 0;
+            this.treeView_Left.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView_Left_AfterSelect);
             // 
             // imageList_Tree_Icon
             // 

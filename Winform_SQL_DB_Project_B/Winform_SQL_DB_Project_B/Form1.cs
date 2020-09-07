@@ -53,5 +53,10 @@ namespace Winform_SQL_DB_Project_B
         {
 
         }
+
+        private void treeView_Left_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
+        }
     }
 }
