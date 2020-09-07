@@ -18,10 +18,12 @@ namespace _20200904_DB메뉴_윈폼에표시
         {
             InitializeComponent();
         }
+
+
 		private void 메뉴ToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			bool retValue = false;
-			string dbIp = "localhost";
+			string dbIp = "192.168.0.28";
 			string dbName = "XE";
 			string dbId = "hr";
 			string dbPw = "1234";
@@ -90,7 +92,7 @@ namespace _20200904_DB메뉴_윈폼에표시
         private void 테이블1ToolStripMenuItem_Click(object sender, EventArgs e)
 		{
             bool retValue = false;
-			string dbIp = "localhost";
+			string dbIp = "192.168.0.28";
 			string dbName = "XE";
 			string dbId = "hr";
 			string dbPw = "1234";
@@ -119,7 +121,7 @@ namespace _20200904_DB메뉴_윈폼에표시
         {
             MessageBox.Show(sender+"호출하자");
 			bool retValue = false;
-			string dbIp = "localhost";
+			string dbIp = "192.168.0.28";
 			string dbName = "XE";
 			string dbId = "hr";
 			string dbPw = "1234";
@@ -155,7 +157,7 @@ namespace _20200904_DB메뉴_윈폼에표시
 			MessageBox.Show(sender + "호출하자");
 
 			bool retValue = false;
-			string dbIp = "localhost";
+			string dbIp = "192.168.0.28";
 			string dbName = "XE";
 			string dbId = "hr";
 			string dbPw = "1234";
@@ -190,7 +192,7 @@ namespace _20200904_DB메뉴_윈폼에표시
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
 			bool retValue = false;
-			string dbIp = "localhost";
+			string dbIp = "192.168.0.28";
 			string dbName = "XE";
 			string dbId = "hr";
 			string dbPw = "1234";

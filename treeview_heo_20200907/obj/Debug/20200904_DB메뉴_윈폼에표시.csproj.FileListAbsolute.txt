@@ -11,3 +11,15 @@ C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\obj\Debug\2020
 C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\bin\Debug\Oracle.DataAccess.dll
 C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\obj\Debug\20200904_DB메뉴_윈폼에표시.csproj.CopyComplete
 C:\GitHub\SQL활용\SQL-\200904\20200904_DB메뉴_윈폼에표시\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\User\source\repos\SqlDatabaseProjectB\Winform_SQL_DB_Project_B\treeview_heo_20200907\bin\Debug\20200904_DB메뉴_윈폼에표시.exe.config
+C:\Users\User\source\repos\SqlDatabaseProjectB\Winform_SQL_DB_Project_B\treeview_heo_20200907\bin\Debug\20200904_DB메뉴_윈폼에표시.exe
+C:\Users\User\source\repos\SqlDatabaseProjectB\Winform_SQL_DB_Project_B\treeview_heo_20200907\bin\Debug\20200904_DB메뉴_윈폼에표시.pdb
+C:\Users\User\source\repos\SqlDatabaseProjectB\Winform_SQL_DB_Project_B\treeview_heo_20200907\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\User\source\repos\SqlDatabaseProjectB\Winform_SQL_DB_Project_B\treeview_heo_20200907\obj\Debug\20200904_DB메뉴_윈폼에표시.csprojAssemblyReference.cache
+C:\Users\User\source\repos\SqlDatabaseProjectB\Winform_SQL_DB_Project_B\treeview_heo_20200907\obj\Debug\_20200904_DB메뉴_윈폼에표시.Form1.resources
+C:\Users\User\source\repos\SqlDatabaseProjectB\Winform_SQL_DB_Project_B\treeview_heo_20200907\obj\Debug\_20200904_DB메뉴_윈폼에표시.Properties.Resources.resources
+C:\Users\User\source\repos\SqlDatabaseProjectB\Winform_SQL_DB_Project_B\treeview_heo_20200907\obj\Debug\20200904_DB메뉴_윈폼에표시.csproj.GenerateResource.cache
+C:\Users\User\source\repos\SqlDatabaseProjectB\Winform_SQL_DB_Project_B\treeview_heo_20200907\obj\Debug\20200904_DB메뉴_윈폼에표시.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\SqlDatabaseProjectB\Winform_SQL_DB_Project_B\treeview_heo_20200907\obj\Debug\20200904_DB메뉴_윈폼에표시.csproj.CopyComplete
+C:\Users\User\source\repos\SqlDatabaseProjectB\Winform_SQL_DB_Project_B\treeview_heo_20200907\obj\Debug\20200904_DB메뉴_윈폼에표시.exe
+C:\Users\User\source\repos\SqlDatabaseProjectB\Winform_SQL_DB_Project_B\treeview_heo_20200907\obj\Debug\20200904_DB메뉴_윈폼에표시.pdb

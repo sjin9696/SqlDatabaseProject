@@ -52,10 +52,10 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 130);
+            this.dataGridView1.Location = new System.Drawing.Point(127, 130);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(584, 319);
+            this.dataGridView1.Size = new System.Drawing.Size(457, 319);
             this.dataGridView1.TabIndex = 0;
             // 
             // menuStrip1
@@ -82,19 +82,19 @@
             // 테이블ToolStripMenuItem
             // 
             this.테이블ToolStripMenuItem.Name = "테이블ToolStripMenuItem";
-            this.테이블ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.테이블ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.테이블ToolStripMenuItem.Text = "테이블";
             // 
             // 프로시저ToolStripMenuItem
             // 
             this.프로시저ToolStripMenuItem.Name = "프로시저ToolStripMenuItem";
-            this.프로시저ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.프로시저ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.프로시저ToolStripMenuItem.Text = "프로시저";
             // 
             // 시퀀스ToolStripMenuItem
             // 
             this.시퀀스ToolStripMenuItem.Name = "시퀀스ToolStripMenuItem";
-            this.시퀀스ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.시퀀스ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.시퀀스ToolStripMenuItem.Text = "시퀀스";
             // 
             // textBox1
@@ -107,7 +107,7 @@
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(201, 1);
+            this.treeView1.Location = new System.Drawing.Point(0, 46);
             this.treeView1.Name = "treeView1";
             treeNode1.Name = "노드3";
             treeNode1.Text = "노드3";
@@ -125,7 +125,7 @@
             treeNode2,
             treeNode4,
             treeNode6});
-            this.treeView1.Size = new System.Drawing.Size(121, 437);
+            this.treeView1.Size = new System.Drawing.Size(130, 403);
             this.treeView1.TabIndex = 6;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             this.treeView1.Click += new System.EventHandler(this.메뉴ToolStripMenuItem_Click);
