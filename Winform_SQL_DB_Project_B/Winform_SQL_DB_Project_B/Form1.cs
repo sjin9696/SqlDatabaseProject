@@ -44,18 +44,20 @@ namespace Winform_SQL_DB_Project_B
         {
             button_Delete_auto_fill(); //우종훈
         }
-
-        private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void treeView_Left_AfterSelect(object sender, TreeViewEventArgs e)
         {
             DataManager.Tree_Oracle(e.Node.Text);
             dataGridView.DataSource = DataManager.ds.Tables[0];
         }
 
-        
+        private void button_Updata_Click(object sender, EventArgs e)
+        {
+            Form1_Click_Update_form();
+        }
+
+        private void dataGridView_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            Console.WriteLine("11");
+        }
     }
 }

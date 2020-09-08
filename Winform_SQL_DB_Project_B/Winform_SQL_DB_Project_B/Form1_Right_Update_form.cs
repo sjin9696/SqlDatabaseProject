@@ -18,6 +18,8 @@ namespace Winform_SQL_DB_Project_B
             form_Update.AutoSize = false;
             form_Update.StartPosition = FormStartPosition.CenterScreen;
             dataGridView_Update.Dock = DockStyle.Fill;
+            dataGridView_Update.CellValueChanged += new 
+                    DataGridViewCellEventHandler(dataGridView_Update_CellValueChanged);
             form_Update.Controls.Add(dataGridView_Update);
         }
         public void Form1_Click_Update_form()
@@ -25,9 +27,9 @@ namespace Winform_SQL_DB_Project_B
             dataGridView_Update.DataSource = dataGridView.DataSource;
             form_Update.ShowDialog();
         }
-        private void button_Updata_Click(object sender, EventArgs e)
+        private void dataGridView_Update_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            Form1_Click_Update_form();
+            Console.WriteLine("dataGridView_Update_CellValueChanged");
         }
     }
 }
