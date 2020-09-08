@@ -17,7 +17,8 @@ namespace Winform_SQL_DB_Project_B
         public Form1()
         {
             InitializeComponent();
-            Form1_TreeView(); //public partial class Form1 : Form
+            Form1_TreeView();   //public partial class Form1 : Form [File : Form1_TreeView.cs]
+            Initialized();      //public partial class Form1 : Form [File : Form1_Click_Update_form.cs]
             MessageBox.Show(DataManager.Connect_Oracle());
             dataGridView.DataSource = DataManager.ds.Tables[0];
         }
@@ -39,12 +40,6 @@ namespace Winform_SQL_DB_Project_B
         {
 
         }
-
-        private void button_Updata_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button_Delete_Click(object sender, EventArgs e)
         {
 
@@ -60,5 +55,7 @@ namespace Winform_SQL_DB_Project_B
             DataManager.Tree_Oracle(e.Node.Text);
             dataGridView.DataSource = DataManager.ds.Tables[0];
         }
+
+        
     }
 }
