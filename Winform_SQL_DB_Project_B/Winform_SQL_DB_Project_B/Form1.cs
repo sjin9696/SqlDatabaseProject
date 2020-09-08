@@ -17,8 +17,8 @@ namespace Winform_SQL_DB_Project_B
         public Form1()
         {
             InitializeComponent();
-            Form1_TreeView();   //public partial class Form1 : Form [File : Form1_TreeView.cs]
-            Initialized();      //public partial class Form1 : Form [File : Form1_Click_Update_form.cs]
+            Form1_TreeView();   //public partial class Form1 : Form [File : Form1_Left_TreeView.cs]
+            InitializeUpdate_Form();      //public partial class Form1 : Form [File : Form1_Right_Update_form.cs]
             MessageBox.Show(DataManager.Connect_Oracle());
             dataGridView.DataSource = DataManager.ds.Tables[0];
         }
@@ -33,16 +33,16 @@ namespace Winform_SQL_DB_Project_B
 
         private void button_Select_Click(object sender, EventArgs e)
         {
-
+            button_Select_auto_fill(); //우종훈
         }
 
         private void button_Insert_Click(object sender, EventArgs e)
         {
-
+            button_Insert_auto_fill(); //우종훈
         }
         private void button_Delete_Click(object sender, EventArgs e)
         {
-
+            button_Delete_auto_fill(); //우종훈
         }
 
         private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)

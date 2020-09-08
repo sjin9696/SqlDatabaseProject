@@ -31,17 +31,7 @@ namespace Winform_SQL_DB_Project_B
 
         private void button_Select_Click(object sender, EventArgs e)
         {
-            
-
-            if(textBox_Right_Select.Text=="")
-            {
-                textBox_Right_Sql.Text = "Select * from 테이블 이름을 입력하세요;";
-            }
-            else
-            {
-                textBox_Right_Sql.Text = "Select * from "+ textBox_Right_Select.Text+";";
-            }
-            textBox_Right_Select.Clear();
+            button_select_auto_fill();
         }
 
         private void button_Insert_Click(object sender, EventArgs e)
