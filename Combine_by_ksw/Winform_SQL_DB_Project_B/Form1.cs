@@ -30,12 +30,12 @@ namespace Winform_SQL_DB_Project_B
 
         private void button_Select_Click(object sender, EventArgs e)
         {
-
+            button_Select_auto_fill(); //우종훈
         }
 
         private void button_Insert_Click(object sender, EventArgs e)
         {
-
+            button_Insert_auto_fill(); //우종훈
         }
 
         private void dataGridView_CellValueChanged(object sender, DataGridViewCellEventArgs e) // 곽상우
@@ -100,7 +100,7 @@ namespace Winform_SQL_DB_Project_B
 
         private void button_Delete_Click(object sender, EventArgs e)
         {
-
+            button_Delete_auto_fill();
         }
 
         private void treeView_Left_AfterSelect(object sender, TreeViewEventArgs e) //허선용 -> 곽상우
@@ -114,6 +114,9 @@ namespace Winform_SQL_DB_Project_B
                 textBox_Middle.Text = null;
                 string notice = null;
                 notice = DataManager.Tree_Oracle(e.Node.Text, e.Node.Parent.Text);
+                tabPage_Middle_datagridview.Text = e.Node.Text;
+
+
                 dataGridView.DataSource = DataManager.ds.Tables[0];
                 textBox_Middle.Text = notice;
             }

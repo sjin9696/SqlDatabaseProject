@@ -12,7 +12,7 @@ namespace Winform_SQL_DB_Project_B
 	class Class_DM
 	{
 		public bool retValue = false;
-		public string dbIp = "localhost";
+		public string dbIp = "192.168.0.67";
 		public string dbName = "XE";
 		public string dbId = "hr";
 		public string dbPw = "1234";

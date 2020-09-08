@@ -130,7 +130,7 @@
             this.tabPage_Middle_datagridview.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage_Middle_datagridview.Size = new System.Drawing.Size(535, 551);
             this.tabPage_Middle_datagridview.TabIndex = 0;
-            this.tabPage_Middle_datagridview.Text = "테이블1";
+            this.tabPage_Middle_datagridview.Text = "테이블";
             this.tabPage_Middle_datagridview.UseVisualStyleBackColor = true;
             // 
             // dataGridView
@@ -449,11 +449,6 @@
         private System.Windows.Forms.TreeView treeView_Left;
         private System.Windows.Forms.ImageList imageList_Tree_Icon;
         private System.Windows.Forms.Panel panel_Middle;
-        private System.Windows.Forms.TabControl tabControl_Middle;
-        private System.Windows.Forms.TabPage tabPage_Middle_datagridview;
-        private System.Windows.Forms.DataGridView dataGridView;
-        private System.Windows.Forms.TabPage tabPage_Middle_textbox;
-        private System.Windows.Forms.TextBox textBox_Middle;
         private System.Windows.Forms.Panel panel_Right;
         private System.Windows.Forms.TextBox textBox_Right_Sql;
         private System.Windows.Forms.Panel panel_Right_Sql_exec;
@@ -476,6 +471,11 @@
         private System.Windows.Forms.Panel panel_Right_Sql_Text;
         private System.Windows.Forms.Panel panel_Left;
         private System.Windows.Forms.GroupBox groupBox_Right;
+        private System.Windows.Forms.TabControl tabControl_Middle;
+        private System.Windows.Forms.TabPage tabPage_Middle_datagridview;
+        private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.TabPage tabPage_Middle_textbox;
+        private System.Windows.Forms.TextBox textBox_Middle;
     }
 }
 
