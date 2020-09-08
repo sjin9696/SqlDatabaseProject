@@ -1,0 +1,12 @@
+
+*.suo
+*.pdb
+*.cs
+*.resx
+*.cache
+
+*.resources
+
+*.exe
+
+.suo

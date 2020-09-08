@@ -29,13 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("테이블1");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("테이블2");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("테이블", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2});
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("프로시저");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("시퀀스");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel_Left_Treeview = new System.Windows.Forms.Panel();
             this.treeView_Left = new System.Windows.Forms.TreeView();
@@ -47,12 +40,7 @@
             this.tabPage_Middle_textbox = new System.Windows.Forms.TabPage();
             this.textBox_Middle = new System.Windows.Forms.TextBox();
             this.panel_Right = new System.Windows.Forms.Panel();
-            this.panel_Right_status = new System.Windows.Forms.Panel();
-            this.tabControl_Right_status = new System.Windows.Forms.TabControl();
-            this.tabPage_Right_status = new System.Windows.Forms.TabPage();
-            this.textBox_Right_status = new System.Windows.Forms.TextBox();
-            this.tabPage_Right_error = new System.Windows.Forms.TabPage();
-            this.textBox_Right_error = new System.Windows.Forms.TextBox();
+            this.groupBox_Right = new System.Windows.Forms.GroupBox();
             this.panel_Right_DMLs = new System.Windows.Forms.TableLayoutPanel();
             this.button_Delete = new System.Windows.Forms.Button();
             this.textBox_Right_Select = new System.Windows.Forms.TextBox();
@@ -62,6 +50,12 @@
             this.button_Updata = new System.Windows.Forms.Button();
             this.button_Insert = new System.Windows.Forms.Button();
             this.button_Select = new System.Windows.Forms.Button();
+            this.panel_Right_status = new System.Windows.Forms.Panel();
+            this.tabControl_Right_status = new System.Windows.Forms.TabControl();
+            this.tabPage_Right_status = new System.Windows.Forms.TabPage();
+            this.textBox_Right_status = new System.Windows.Forms.TextBox();
+            this.tabPage_Right_error = new System.Windows.Forms.TabPage();
+            this.textBox_Right_error = new System.Windows.Forms.TextBox();
             this.panel_Right_Sql_exec = new System.Windows.Forms.Panel();
             this.button_Sql_exec = new System.Windows.Forms.Button();
             this.panel_Right_Sql_Text = new System.Windows.Forms.Panel();
@@ -74,11 +68,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.tabPage_Middle_textbox.SuspendLayout();
             this.panel_Right.SuspendLayout();
+            this.groupBox_Right.SuspendLayout();
+            this.panel_Right_DMLs.SuspendLayout();
             this.panel_Right_status.SuspendLayout();
             this.tabControl_Right_status.SuspendLayout();
             this.tabPage_Right_status.SuspendLayout();
             this.tabPage_Right_error.SuspendLayout();
-            this.panel_Right_DMLs.SuspendLayout();
             this.panel_Right_Sql_exec.SuspendLayout();
             this.panel_Right_Sql_Text.SuspendLayout();
             this.panel_Left.SuspendLayout();
@@ -97,23 +92,6 @@
             this.treeView_Left.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView_Left.Location = new System.Drawing.Point(0, 0);
             this.treeView_Left.Name = "treeView_Left";
-            treeNode1.Name = "NodesTable1";
-            treeNode1.Text = "테이블1";
-            treeNode2.Name = "NodesTable2";
-            treeNode2.Text = "테이블2";
-            treeNode3.Name = "TreeNodeTable";
-            treeNode3.Text = "테이블";
-            treeNode3.ToolTipText = "테이블 설명입니다.";
-            treeNode4.Name = "TreeNodeProcedure";
-            treeNode4.Text = "프로시저";
-            treeNode4.ToolTipText = "프로시저설명입니다.";
-            treeNode5.Name = "TreeNodeSequence";
-            treeNode5.Text = "시퀀스";
-            treeNode5.ToolTipText = "시퀀스설명입니다.";
-            this.treeView_Left.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode3,
-            treeNode4,
-            treeNode5});
             this.treeView_Left.Size = new System.Drawing.Size(194, 561);
             this.treeView_Left.TabIndex = 0;
             this.treeView_Left.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView_Left_AfterSelect);
@@ -129,7 +107,7 @@
             this.panel_Middle.Controls.Add(this.tabControl_Middle);
             this.panel_Middle.Location = new System.Drawing.Point(206, 12);
             this.panel_Middle.Name = "panel_Middle";
-            this.panel_Middle.Size = new System.Drawing.Size(577, 577);
+            this.panel_Middle.Size = new System.Drawing.Size(543, 577);
             this.panel_Middle.TabIndex = 1;
             // 
             // tabControl_Middle
@@ -141,7 +119,7 @@
             this.tabControl_Middle.Location = new System.Drawing.Point(0, 0);
             this.tabControl_Middle.Name = "tabControl_Middle";
             this.tabControl_Middle.SelectedIndex = 0;
-            this.tabControl_Middle.Size = new System.Drawing.Size(577, 577);
+            this.tabControl_Middle.Size = new System.Drawing.Size(543, 577);
             this.tabControl_Middle.TabIndex = 1;
             // 
             // tabPage_Middle_datagridview
@@ -150,7 +128,7 @@
             this.tabPage_Middle_datagridview.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Middle_datagridview.Name = "tabPage_Middle_datagridview";
             this.tabPage_Middle_datagridview.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Middle_datagridview.Size = new System.Drawing.Size(569, 551);
+            this.tabPage_Middle_datagridview.Size = new System.Drawing.Size(535, 551);
             this.tabPage_Middle_datagridview.TabIndex = 0;
             this.tabPage_Middle_datagridview.Text = "테이블1";
             this.tabPage_Middle_datagridview.UseVisualStyleBackColor = true;
@@ -166,9 +144,9 @@
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowTemplate.Height = 23;
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView.Size = new System.Drawing.Size(563, 545);
+            this.dataGridView.Size = new System.Drawing.Size(529, 545);
             this.dataGridView.TabIndex = 0;
-            this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
+            
             // 
             // tabPage_Middle_textbox
             // 
@@ -176,7 +154,7 @@
             this.tabPage_Middle_textbox.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Middle_textbox.Name = "tabPage_Middle_textbox";
             this.tabPage_Middle_textbox.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Middle_textbox.Size = new System.Drawing.Size(569, 551);
+            this.tabPage_Middle_textbox.Size = new System.Drawing.Size(535, 551);
             this.tabPage_Middle_textbox.TabIndex = 1;
             this.tabPage_Middle_textbox.Text = "프로시저";
             this.tabPage_Middle_textbox.UseVisualStyleBackColor = true;
@@ -187,19 +165,133 @@
             this.textBox_Middle.Location = new System.Drawing.Point(3, 3);
             this.textBox_Middle.Multiline = true;
             this.textBox_Middle.Name = "textBox_Middle";
-            this.textBox_Middle.Size = new System.Drawing.Size(563, 545);
+            this.textBox_Middle.Size = new System.Drawing.Size(529, 545);
             this.textBox_Middle.TabIndex = 0;
             // 
             // panel_Right
             // 
+            this.panel_Right.Controls.Add(this.groupBox_Right);
             this.panel_Right.Controls.Add(this.panel_Right_status);
-            this.panel_Right.Controls.Add(this.panel_Right_DMLs);
             this.panel_Right.Controls.Add(this.panel_Right_Sql_exec);
             this.panel_Right.Controls.Add(this.panel_Right_Sql_Text);
-            this.panel_Right.Location = new System.Drawing.Point(789, 12);
+            this.panel_Right.Location = new System.Drawing.Point(755, 12);
             this.panel_Right.Name = "panel_Right";
-            this.panel_Right.Size = new System.Drawing.Size(291, 577);
+            this.panel_Right.Size = new System.Drawing.Size(325, 577);
             this.panel_Right.TabIndex = 2;
+            // 
+            // groupBox_Right
+            // 
+            this.groupBox_Right.Controls.Add(this.panel_Right_DMLs);
+            this.groupBox_Right.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox_Right.Location = new System.Drawing.Point(0, 197);
+            this.groupBox_Right.Name = "groupBox_Right";
+            this.groupBox_Right.Size = new System.Drawing.Size(325, 150);
+            this.groupBox_Right.TabIndex = 5;
+            this.groupBox_Right.TabStop = false;
+            this.groupBox_Right.Text = "자동완성기능";
+            // 
+            // panel_Right_DMLs
+            // 
+            this.panel_Right_DMLs.ColumnCount = 2;
+            this.panel_Right_DMLs.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.05263F));
+            this.panel_Right_DMLs.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.94737F));
+            this.panel_Right_DMLs.Controls.Add(this.button_Delete, 1, 3);
+            this.panel_Right_DMLs.Controls.Add(this.textBox_Right_Select, 0, 0);
+            this.panel_Right_DMLs.Controls.Add(this.textBox_Right_Delete, 0, 3);
+            this.panel_Right_DMLs.Controls.Add(this.textBox_Right_Insert, 0, 1);
+            this.panel_Right_DMLs.Controls.Add(this.textBox_Right_Update, 0, 2);
+            this.panel_Right_DMLs.Controls.Add(this.button_Updata, 1, 2);
+            this.panel_Right_DMLs.Controls.Add(this.button_Insert, 1, 1);
+            this.panel_Right_DMLs.Controls.Add(this.button_Select, 1, 0);
+            this.panel_Right_DMLs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Right_DMLs.Location = new System.Drawing.Point(3, 17);
+            this.panel_Right_DMLs.Name = "panel_Right_DMLs";
+            this.panel_Right_DMLs.RowCount = 4;
+            this.panel_Right_DMLs.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.panel_Right_DMLs.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.panel_Right_DMLs.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.panel_Right_DMLs.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.panel_Right_DMLs.Size = new System.Drawing.Size(319, 130);
+            this.panel_Right_DMLs.TabIndex = 3;
+            // 
+            // button_Delete
+            // 
+            this.button_Delete.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_Delete.Location = new System.Drawing.Point(197, 99);
+            this.button_Delete.Name = "button_Delete";
+            this.button_Delete.Size = new System.Drawing.Size(119, 28);
+            this.button_Delete.TabIndex = 1;
+            this.button_Delete.Text = "Delete (삭제)기능";
+            this.button_Delete.UseVisualStyleBackColor = true;
+            this.button_Delete.Click += new System.EventHandler(this.button_Delete_Click);
+            // 
+            // textBox_Right_Select
+            // 
+            this.textBox_Right_Select.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox_Right_Select.Location = new System.Drawing.Point(3, 3);
+            this.textBox_Right_Select.Name = "textBox_Right_Select";
+            this.textBox_Right_Select.Size = new System.Drawing.Size(188, 21);
+            this.textBox_Right_Select.TabIndex = 0;
+            // 
+            // textBox_Right_Delete
+            // 
+            this.textBox_Right_Delete.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox_Right_Delete.Location = new System.Drawing.Point(3, 99);
+            this.textBox_Right_Delete.Name = "textBox_Right_Delete";
+            this.textBox_Right_Delete.Size = new System.Drawing.Size(188, 21);
+            this.textBox_Right_Delete.TabIndex = 0;
+            // 
+            // textBox_Right_Insert
+            // 
+            this.textBox_Right_Insert.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox_Right_Insert.Location = new System.Drawing.Point(3, 35);
+            this.textBox_Right_Insert.Name = "textBox_Right_Insert";
+            this.textBox_Right_Insert.Size = new System.Drawing.Size(188, 21);
+            this.textBox_Right_Insert.TabIndex = 0;
+            // 
+            // textBox_Right_Update
+            // 
+            this.textBox_Right_Update.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox_Right_Update.Enabled = false;
+            this.textBox_Right_Update.Location = new System.Drawing.Point(3, 67);
+            this.textBox_Right_Update.Name = "textBox_Right_Update";
+            this.textBox_Right_Update.Size = new System.Drawing.Size(188, 21);
+            this.textBox_Right_Update.TabIndex = 0;
+            this.textBox_Right_Update.Text = "\"데이터그리드뷰에서 수정\"";
+            this.textBox_Right_Update.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button_Updata
+            // 
+            this.button_Updata.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_Updata.Location = new System.Drawing.Point(197, 67);
+            this.button_Updata.Name = "button_Updata";
+            this.button_Updata.Size = new System.Drawing.Size(119, 26);
+            this.button_Updata.TabIndex = 1;
+            this.button_Updata.Text = "Updata (수정)기능";
+            this.button_Updata.UseVisualStyleBackColor = true;
+            this.button_Updata.Click += new System.EventHandler(this.button_Updata_Click);
+            // 
+            // button_Insert
+            // 
+            this.button_Insert.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_Insert.Location = new System.Drawing.Point(197, 35);
+            this.button_Insert.Name = "button_Insert";
+            this.button_Insert.Size = new System.Drawing.Size(119, 26);
+            this.button_Insert.TabIndex = 1;
+            this.button_Insert.Text = "Insert (입력)기능";
+            this.button_Insert.UseVisualStyleBackColor = true;
+            this.button_Insert.Click += new System.EventHandler(this.button_Insert_Click);
+            // 
+            // button_Select
+            // 
+            this.button_Select.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button_Select.Location = new System.Drawing.Point(197, 3);
+            this.button_Select.Name = "button_Select";
+            this.button_Select.Size = new System.Drawing.Size(119, 26);
+            this.button_Select.TabIndex = 1;
+            this.button_Select.Text = "Select (조회)기능";
+            this.button_Select.UseVisualStyleBackColor = true;
+            this.button_Select.Click += new System.EventHandler(this.button_Select_Click);
             // 
             // panel_Right_status
             // 
@@ -207,7 +299,7 @@
             this.panel_Right_status.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_Right_status.Location = new System.Drawing.Point(0, 347);
             this.panel_Right_status.Name = "panel_Right_status";
-            this.panel_Right_status.Size = new System.Drawing.Size(291, 230);
+            this.panel_Right_status.Size = new System.Drawing.Size(325, 230);
             this.panel_Right_status.TabIndex = 4;
             // 
             // tabControl_Right_status
@@ -218,7 +310,7 @@
             this.tabControl_Right_status.Location = new System.Drawing.Point(0, 0);
             this.tabControl_Right_status.Name = "tabControl_Right_status";
             this.tabControl_Right_status.SelectedIndex = 0;
-            this.tabControl_Right_status.Size = new System.Drawing.Size(291, 230);
+            this.tabControl_Right_status.Size = new System.Drawing.Size(325, 230);
             this.tabControl_Right_status.TabIndex = 0;
             // 
             // tabPage_Right_status
@@ -227,7 +319,7 @@
             this.tabPage_Right_status.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Right_status.Name = "tabPage_Right_status";
             this.tabPage_Right_status.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Right_status.Size = new System.Drawing.Size(283, 204);
+            this.tabPage_Right_status.Size = new System.Drawing.Size(317, 204);
             this.tabPage_Right_status.TabIndex = 0;
             this.tabPage_Right_status.Text = "출력창";
             this.tabPage_Right_status.UseVisualStyleBackColor = true;
@@ -240,7 +332,7 @@
             this.textBox_Right_status.Location = new System.Drawing.Point(3, 3);
             this.textBox_Right_status.Multiline = true;
             this.textBox_Right_status.Name = "textBox_Right_status";
-            this.textBox_Right_status.Size = new System.Drawing.Size(277, 198);
+            this.textBox_Right_status.Size = new System.Drawing.Size(311, 198);
             this.textBox_Right_status.TabIndex = 0;
             // 
             // tabPage_Right_error
@@ -249,7 +341,7 @@
             this.tabPage_Right_error.Location = new System.Drawing.Point(4, 22);
             this.tabPage_Right_error.Name = "tabPage_Right_error";
             this.tabPage_Right_error.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Right_error.Size = new System.Drawing.Size(283, 204);
+            this.tabPage_Right_error.Size = new System.Drawing.Size(317, 204);
             this.tabPage_Right_error.TabIndex = 1;
             this.tabPage_Right_error.Text = "오류메세지";
             this.tabPage_Right_error.UseVisualStyleBackColor = true;
@@ -261,108 +353,8 @@
             this.textBox_Right_error.Location = new System.Drawing.Point(3, 3);
             this.textBox_Right_error.Multiline = true;
             this.textBox_Right_error.Name = "textBox_Right_error";
-            this.textBox_Right_error.Size = new System.Drawing.Size(277, 198);
+            this.textBox_Right_error.Size = new System.Drawing.Size(311, 198);
             this.textBox_Right_error.TabIndex = 0;
-            // 
-            // panel_Right_DMLs
-            // 
-            this.panel_Right_DMLs.ColumnCount = 2;
-            this.panel_Right_DMLs.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.panel_Right_DMLs.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.panel_Right_DMLs.Controls.Add(this.button_Delete, 1, 3);
-            this.panel_Right_DMLs.Controls.Add(this.textBox_Right_Select, 0, 0);
-            this.panel_Right_DMLs.Controls.Add(this.textBox_Right_Delete, 0, 3);
-            this.panel_Right_DMLs.Controls.Add(this.textBox_Right_Insert, 0, 1);
-            this.panel_Right_DMLs.Controls.Add(this.textBox_Right_Update, 0, 2);
-            this.panel_Right_DMLs.Controls.Add(this.button_Updata, 1, 2);
-            this.panel_Right_DMLs.Controls.Add(this.button_Insert, 1, 1);
-            this.panel_Right_DMLs.Controls.Add(this.button_Select, 1, 0);
-            this.panel_Right_DMLs.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_Right_DMLs.Location = new System.Drawing.Point(0, 203);
-            this.panel_Right_DMLs.Name = "panel_Right_DMLs";
-            this.panel_Right_DMLs.RowCount = 4;
-            this.panel_Right_DMLs.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.panel_Right_DMLs.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.panel_Right_DMLs.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.panel_Right_DMLs.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.panel_Right_DMLs.Size = new System.Drawing.Size(291, 119);
-            this.panel_Right_DMLs.TabIndex = 3;
-            // 
-            // button_Delete
-            // 
-            this.button_Delete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_Delete.Location = new System.Drawing.Point(148, 90);
-            this.button_Delete.Name = "button_Delete";
-            this.button_Delete.Size = new System.Drawing.Size(140, 26);
-            this.button_Delete.TabIndex = 1;
-            this.button_Delete.Text = "Delete (삭제)";
-            this.button_Delete.UseVisualStyleBackColor = true;
-            this.button_Delete.Click += new System.EventHandler(this.button_Delete_Click);
-            // 
-            // textBox_Right_Select
-            // 
-            this.textBox_Right_Select.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox_Right_Select.Location = new System.Drawing.Point(3, 3);
-            this.textBox_Right_Select.Name = "textBox_Right_Select";
-            this.textBox_Right_Select.Size = new System.Drawing.Size(139, 21);
-            this.textBox_Right_Select.TabIndex = 0;
-            // 
-            // textBox_Right_Delete
-            // 
-            this.textBox_Right_Delete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox_Right_Delete.Location = new System.Drawing.Point(3, 90);
-            this.textBox_Right_Delete.Name = "textBox_Right_Delete";
-            this.textBox_Right_Delete.Size = new System.Drawing.Size(139, 21);
-            this.textBox_Right_Delete.TabIndex = 0;
-            // 
-            // textBox_Right_Insert
-            // 
-            this.textBox_Right_Insert.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox_Right_Insert.Location = new System.Drawing.Point(3, 32);
-            this.textBox_Right_Insert.Name = "textBox_Right_Insert";
-            this.textBox_Right_Insert.Size = new System.Drawing.Size(139, 21);
-            this.textBox_Right_Insert.TabIndex = 0;
-            // 
-            // textBox_Right_Update
-            // 
-            this.textBox_Right_Update.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox_Right_Update.Location = new System.Drawing.Point(3, 61);
-            this.textBox_Right_Update.Name = "textBox_Right_Update";
-            this.textBox_Right_Update.Size = new System.Drawing.Size(139, 21);
-            this.textBox_Right_Update.TabIndex = 0;
-            // 
-            // button_Updata
-            // 
-            this.button_Updata.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_Updata.Location = new System.Drawing.Point(148, 61);
-            this.button_Updata.Name = "button_Updata";
-            this.button_Updata.Size = new System.Drawing.Size(140, 23);
-            this.button_Updata.TabIndex = 1;
-            this.button_Updata.Text = "Updata 수정";
-            this.button_Updata.UseVisualStyleBackColor = true;
-            this.button_Updata.Click += new System.EventHandler(this.button_Updata_Click);
-            // 
-            // button_Insert
-            // 
-            this.button_Insert.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_Insert.Location = new System.Drawing.Point(148, 32);
-            this.button_Insert.Name = "button_Insert";
-            this.button_Insert.Size = new System.Drawing.Size(140, 23);
-            this.button_Insert.TabIndex = 1;
-            this.button_Insert.Text = "Insert (입력)";
-            this.button_Insert.UseVisualStyleBackColor = true;
-            this.button_Insert.Click += new System.EventHandler(this.button_Insert_Click);
-            // 
-            // button_Select
-            // 
-            this.button_Select.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_Select.Location = new System.Drawing.Point(148, 3);
-            this.button_Select.Name = "button_Select";
-            this.button_Select.Size = new System.Drawing.Size(140, 23);
-            this.button_Select.TabIndex = 1;
-            this.button_Select.Text = "Select (조회)";
-            this.button_Select.UseVisualStyleBackColor = true;
-            this.button_Select.Click += new System.EventHandler(this.button_Select_Click);
             // 
             // panel_Right_Sql_exec
             // 
@@ -370,7 +362,7 @@
             this.panel_Right_Sql_exec.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Right_Sql_exec.Location = new System.Drawing.Point(0, 143);
             this.panel_Right_Sql_exec.Name = "panel_Right_Sql_exec";
-            this.panel_Right_Sql_exec.Size = new System.Drawing.Size(291, 60);
+            this.panel_Right_Sql_exec.Size = new System.Drawing.Size(325, 54);
             this.panel_Right_Sql_exec.TabIndex = 3;
             // 
             // button_Sql_exec
@@ -378,7 +370,7 @@
             this.button_Sql_exec.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button_Sql_exec.Location = new System.Drawing.Point(0, 0);
             this.button_Sql_exec.Name = "button_Sql_exec";
-            this.button_Sql_exec.Size = new System.Drawing.Size(291, 60);
+            this.button_Sql_exec.Size = new System.Drawing.Size(325, 54);
             this.button_Sql_exec.TabIndex = 0;
             this.button_Sql_exec.Text = "SQL 실행";
             this.button_Sql_exec.UseVisualStyleBackColor = true;
@@ -390,7 +382,7 @@
             this.panel_Right_Sql_Text.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_Right_Sql_Text.Location = new System.Drawing.Point(0, 0);
             this.panel_Right_Sql_Text.Name = "panel_Right_Sql_Text";
-            this.panel_Right_Sql_Text.Size = new System.Drawing.Size(291, 143);
+            this.panel_Right_Sql_Text.Size = new System.Drawing.Size(325, 143);
             this.panel_Right_Sql_Text.TabIndex = 1;
             // 
             // textBox_Right_Sql
@@ -400,8 +392,9 @@
             this.textBox_Right_Sql.Margin = new System.Windows.Forms.Padding(10);
             this.textBox_Right_Sql.Multiline = true;
             this.textBox_Right_Sql.Name = "textBox_Right_Sql";
-            this.textBox_Right_Sql.Size = new System.Drawing.Size(291, 143);
+            this.textBox_Right_Sql.Size = new System.Drawing.Size(325, 143);
             this.textBox_Right_Sql.TabIndex = 0;
+            this.textBox_Right_Sql.Text = "\"Oracle SQL문을 입력하세요.\"";
             // 
             // panel_Left
             // 
@@ -432,14 +425,15 @@
             this.tabPage_Middle_textbox.ResumeLayout(false);
             this.tabPage_Middle_textbox.PerformLayout();
             this.panel_Right.ResumeLayout(false);
+            this.groupBox_Right.ResumeLayout(false);
+            this.panel_Right_DMLs.ResumeLayout(false);
+            this.panel_Right_DMLs.PerformLayout();
             this.panel_Right_status.ResumeLayout(false);
             this.tabControl_Right_status.ResumeLayout(false);
             this.tabPage_Right_status.ResumeLayout(false);
             this.tabPage_Right_status.PerformLayout();
             this.tabPage_Right_error.ResumeLayout(false);
             this.tabPage_Right_error.PerformLayout();
-            this.panel_Right_DMLs.ResumeLayout(false);
-            this.panel_Right_DMLs.PerformLayout();
             this.panel_Right_Sql_exec.ResumeLayout(false);
             this.panel_Right_Sql_Text.ResumeLayout(false);
             this.panel_Right_Sql_Text.PerformLayout();
@@ -480,6 +474,7 @@
         private System.Windows.Forms.Button button_Select;
         private System.Windows.Forms.Panel panel_Right_Sql_Text;
         private System.Windows.Forms.Panel panel_Left;
+        private System.Windows.Forms.GroupBox groupBox_Right;
     }
 }
 

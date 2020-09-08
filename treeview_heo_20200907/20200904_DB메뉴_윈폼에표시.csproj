@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D2818EF1-AF4D-4C44-BEF9-CA43B33E1ECE}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>_20200904_DB메뉴_윈폼에표시</RootNamespace>
     <AssemblyName>20200904_DB메뉴_윈폼에표시</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>

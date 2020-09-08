@@ -17,7 +17,8 @@ namespace Winform_SQL_DB_Project_B
         public Form1()
         {
             InitializeComponent();
-            Form1_TreeView(); //public partial class Form1 : Form
+            Form1_TreeView();   //public partial class Form1 : Form [File : Form1_Left_TreeView.cs]
+            InitializeUpdate_Form();      //public partial class Form1 : Form [File : Form1_Right_Update_form.cs]
             MessageBox.Show(DataManager.Connect_Oracle());
             dataGridView.DataSource = DataManager.ds.Tables[0];
         }
@@ -27,36 +28,36 @@ namespace Winform_SQL_DB_Project_B
         private void button_Sql_exec_Click(object sender, EventArgs e)
         {
             DataManager.Cmd_Oracle(textBox_Right_Sql.Text);
+            dataGridView.DataSource = DataManager.ds.Tables[0];
         }
 
         private void button_Select_Click(object sender, EventArgs e)
         {
-
+            button_Select_auto_fill(); //우종훈
         }
 
         private void button_Insert_Click(object sender, EventArgs e)
         {
-
+            button_Insert_auto_fill(); //우종훈
+        }
+        private void button_Delete_Click(object sender, EventArgs e)
+        {
+            button_Delete_auto_fill(); //우종훈
+        }
+        private void treeView_Left_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            DataManager.Tree_Oracle(e.Node.Text);
+            dataGridView.DataSource = DataManager.ds.Tables[0];
         }
 
         private void button_Updata_Click(object sender, EventArgs e)
         {
-
+            Form1_Click_Update_form();
         }
 
-        private void button_Delete_Click(object sender, EventArgs e)
+        private void dataGridView_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-
-        }
-
-        private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void treeView_Left_AfterSelect(object sender, TreeViewEventArgs e)
-        {
-
+            Console.WriteLine("11");
         }
     }
 }
