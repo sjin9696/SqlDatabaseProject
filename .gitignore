@@ -1,15 +1,11 @@
 
-Winform_SQL_DB_Project_B/.vs/Winform_SQL_DB_Project_B/v16/.suo
-Winform_SQL_DB_Project_B/Winform_SQL_DB_Project_B/bin/Debug/Winform_SQL_DB_Project_B.exe
-Winform_SQL_DB_Project_B/Winform_SQL_DB_Project_B/bin/Debug/Winform_SQL_DB_Project_B.pdb
-Winform_SQL_DB_Project_B/Winform_SQL_DB_Project_B/Form1.Designer.cs
-Winform_SQL_DB_Project_B/Winform_SQL_DB_Project_B/Form1.resx
-Winform_SQL_DB_Project_B/Winform_SQL_DB_Project_B/obj/Debug/Winform_SQL_DB_Project_B.csproj.GenerateResource.cache
-Winform_SQL_DB_Project_B/Winform_SQL_DB_Project_B/obj/Debug/Winform_SQL_DB_Project_B.exe
-Winform_SQL_DB_Project_B/Winform_SQL_DB_Project_B/obj/Debug/Winform_SQL_DB_Project_B.Form1.resources
-Winform_SQL_DB_Project_B/Winform_SQL_DB_Project_B/obj/Debug/Winform_SQL_DB_Project_B.pdb
-Winform_SQL_DB_Project_B/Winform_SQL_DB_Project_B/bin/Debug/Winform_SQL_DB_Project_B.exe
-Winform_SQL_DB_Project_B/.vs/Winform_SQL_DB_Project_B/v16/.suo
-Winform_SQL_DB_Project_B/Winform_SQL_DB_Project_B/bin/Debug/Winform_SQL_DB_Project_B.pdb
-Winform_SQL_DB_Project_B/Winform_SQL_DB_Project_B/obj/Debug/Winform_SQL_DB_Project_B.exe
-Winform_SQL_DB_Project_B/Winform_SQL_DB_Project_B/obj/Debug/Winform_SQL_DB_Project_B.Form1.resources
+*.suo
+*.pdb
+*.cs
+*.resx
+*.cache
+
+*.resources
+
+*.exe
+
