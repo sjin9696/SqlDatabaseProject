@@ -57,6 +57,10 @@ namespace Winform_SQL_DB_Project_B
 
         private void button_Updata_Click(object sender, EventArgs e)
         {
+
+            button_Update_auto_fill();
+
+            /*
             List<string> Changed_Value_Row = new List<string>();
             List<string> Changed_Value_Column = new List<string>();
             int rowsIndex = dataGridView.Rows.Count;
@@ -79,7 +83,7 @@ namespace Winform_SQL_DB_Project_B
                 Console.WriteLine("Row = " + Changed_Value_Row[i] + ", Column = " + Changed_Value_Column[i]);
             }
 
-            /*string update_query = null;
+            string update_query = null;
 
             for (int i = 0; i < Changed_Value.Count; i++)
             {

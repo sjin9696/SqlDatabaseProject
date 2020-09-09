@@ -179,12 +179,12 @@ namespace Winform_SQL_DB_Project_B
 
 				if (pgOraCmd.ExecuteNonQuery() == 1)
 				{
-				    Console.WriteLine("insert가 되었습니다.");
+				    Console.WriteLine("정상적으로 명령어가 실행이 되었습니다.");
 				
 				}
 				else
 				{
-					Console.WriteLine("테이블에 아무런 변화가 없습니다.");
+					Console.WriteLine(".");
 				}
 
 				//Connect_Oracle();
