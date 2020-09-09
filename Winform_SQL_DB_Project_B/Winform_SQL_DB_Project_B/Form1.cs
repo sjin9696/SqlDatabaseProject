@@ -17,7 +17,7 @@ namespace Winform_SQL_DB_Project_B
         public Form1()
         {
             InitializeComponent();
-            Form1_TreeView(); //public partial class Form1 : Form
+            Form1_TreeVieW(); //public partial class Form1 : Form
             MessageBox.Show(DataManager.Connect_Oracle());
             dataGridView.DataSource = DataManager.ds.Tables[0];
         }

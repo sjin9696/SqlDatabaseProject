@@ -10,7 +10,7 @@ namespace Winform_SQL_DB_Project_B
     public partial class Form1 : Form
     {
 
-        public void Form1_TreeView()
+        public void Form1_TreeVieW()
         {
             int length = 5;
             TreeNode table = new TreeNode("Table", 0, 0);
