@@ -20,12 +20,27 @@ namespace Winform_SQL_DB_Project_B
         public void button_Insert_auto_fill() // 이수민
         {
             string str = "";
+            string strCoumn = "";
+            string strCoumnType = "";
             for (int i = 1; i< dataGridView.ColumnCount; i++) 
             {
-                str += ',';
+                str += ','+" ";
+             
             }
+            for (int i = 0; i < dataGridView.ColumnCount; i++)
+            {
+                
+                strCoumn += dataGridView.Columns[i].HeaderText + ',';  // 컬럼명 가져오기 추가
+            }
+            string srtCoumn_out = strCoumn.Remove(strCoumn.Length - 1);  // 컬럼명 문자열에서 마지막 , 제거
 
-            textBox_Right_Sql.Text = "Insert into " + tabPage_Middle_datagridview.Text + " values "+"("+str+") --type이 char형식이면 괄호 넣으셔야합니다";
+
+            textBox_Right_Sql.Text = "Insert into " + tabPage_Middle_datagridview.Text + Environment.NewLine +
+                "(" + srtCoumn_out + ")" + Environment.NewLine + " values " + "(" + str + ")" + Environment.NewLine;
+            
+
+
+
             textBox_Right_Insert.Clear();
         }
         public void button_Delete_auto_fill() // 이수민

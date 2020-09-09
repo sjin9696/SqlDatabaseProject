@@ -17,8 +17,9 @@ namespace Winform_SQL_DB_Project_B
 		public string dbId = "hr";
 		public string dbPw = "1234";
 		public DataSet ds = new DataSet();
+        private readonly object tabPage_Middle_datagridview;
 
-		public int Make_Index(string tree) // 허선용 -> 곽상우
+        public int Make_Index(string tree) // 허선용 -> 곽상우
 		{
 			try
 			{
@@ -163,7 +164,7 @@ namespace Winform_SQL_DB_Project_B
 			}
 		}
 		
-		public string Cmd_Oracle(string cmd) // 곽상우,허선용 // 이수민 insert 
+		public string Cmd_Oracle(string cmd, string cmd2) // 곽상우,허선용 // 이수민 insert 
 		{
 			try
 			{
@@ -172,20 +173,21 @@ namespace Winform_SQL_DB_Project_B
 					$"(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME={dbName})));User ID={dbId};Password={dbPw};Connection Timeout=30;");
 				pgOraConn.Open();
 				OracleCommand pgOraCmd = new OracleCommand(cmd, pgOraConn);
-				OracleDataAdapter oda = new OracleDataAdapter(pgOraCmd);
+				OracleCommand pgOraCmd2 = new OracleCommand("select * from "+cmd2, pgOraConn);
+				OracleDataAdapter oda = new OracleDataAdapter(pgOraCmd2);
 				DataSet ds_temp = new DataSet();
 
 				if (pgOraCmd.ExecuteNonQuery() == 1)
 				{
 				    Console.WriteLine("insert가 되었습니다.");
-
+				
 				}
 				else
 				{
 					Console.WriteLine("테이블에 아무런 변화가 없습니다.");
 				}
 
-				Connect_Oracle();
+				//Connect_Oracle();
 				oda.Fill(ds_temp);
 
 				ds = ds_temp;

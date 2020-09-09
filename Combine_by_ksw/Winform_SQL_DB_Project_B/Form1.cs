@@ -25,7 +25,7 @@ namespace Winform_SQL_DB_Project_B
         private void button_Sql_exec_Click(object sender, EventArgs e) // 곽상우,허선용
         {
             string time_set = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
-            string errmsg = DataManager.Cmd_Oracle(textBox_Right_Sql.Text);
+            string errmsg = DataManager.Cmd_Oracle(textBox_Right_Sql.Text, tabPage_Middle_datagridview.Text);
 
             if (errmsg == "1")
             {
@@ -35,7 +35,8 @@ namespace Winform_SQL_DB_Project_B
             {
                 textBox_Right_error.Text = errmsg;
             }
-            DataManager.Cmd_Oracle(textBox_Right_Sql.Text);
+            DataManager.Cmd_Oracle(textBox_Right_Sql.Text, tabPage_Middle_datagridview.Text);
+
             dataGridView.DataSource = DataManager.ds.Tables[0];
         }
 
