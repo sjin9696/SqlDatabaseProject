@@ -136,3 +136,16 @@ C:\Users\User\Desktop\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_
 C:\Users\User\Desktop\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.csproj.CopyComplete
 C:\Users\User\Desktop\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.exe
 C:\Users\User\Desktop\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.pdb
+C:\SqlDatabaseProjectB\Combine_by_ksw\Winform_SQL_DB_Project_B\bin\Debug\Winform_SQL_DB_Project_B.exe.config
+C:\SqlDatabaseProjectB\Combine_by_ksw\Winform_SQL_DB_Project_B\bin\Debug\Winform_SQL_DB_Project_B.exe
+C:\SqlDatabaseProjectB\Combine_by_ksw\Winform_SQL_DB_Project_B\bin\Debug\Winform_SQL_DB_Project_B.pdb
+C:\SqlDatabaseProjectB\Combine_by_ksw\Winform_SQL_DB_Project_B\bin\Debug\Oracle.DataAccess.dll
+C:\SqlDatabaseProjectB\Combine_by_ksw\Winform_SQL_DB_Project_B\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\SqlDatabaseProjectB\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.csprojAssemblyReference.cache
+C:\SqlDatabaseProjectB\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.Form1.resources
+C:\SqlDatabaseProjectB\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.Properties.Resources.resources
+C:\SqlDatabaseProjectB\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.csproj.GenerateResource.cache
+C:\SqlDatabaseProjectB\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.csproj.CoreCompileInputs.cache
+C:\SqlDatabaseProjectB\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.csproj.CopyComplete
+C:\SqlDatabaseProjectB\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.exe
+C:\SqlDatabaseProjectB\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.pdb
