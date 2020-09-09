@@ -167,6 +167,7 @@
             this.textBox_Middle.Location = new System.Drawing.Point(3, 3);
             this.textBox_Middle.Multiline = true;
             this.textBox_Middle.Name = "textBox_Middle";
+            this.textBox_Middle.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox_Middle.Size = new System.Drawing.Size(529, 545);
             this.textBox_Middle.TabIndex = 0;
             // 
@@ -334,6 +335,7 @@
             this.textBox_Right_status.Location = new System.Drawing.Point(3, 3);
             this.textBox_Right_status.Multiline = true;
             this.textBox_Right_status.Name = "textBox_Right_status";
+            this.textBox_Right_status.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox_Right_status.Size = new System.Drawing.Size(311, 198);
             this.textBox_Right_status.TabIndex = 0;
             // 
@@ -355,6 +357,7 @@
             this.textBox_Right_error.Location = new System.Drawing.Point(3, 3);
             this.textBox_Right_error.Multiline = true;
             this.textBox_Right_error.Name = "textBox_Right_error";
+            this.textBox_Right_error.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox_Right_error.Size = new System.Drawing.Size(311, 198);
             this.textBox_Right_error.TabIndex = 0;
             // 
@@ -394,6 +397,7 @@
             this.textBox_Right_Sql.Margin = new System.Windows.Forms.Padding(10);
             this.textBox_Right_Sql.Multiline = true;
             this.textBox_Right_Sql.Name = "textBox_Right_Sql";
+            this.textBox_Right_Sql.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox_Right_Sql.Size = new System.Drawing.Size(325, 143);
             this.textBox_Right_Sql.TabIndex = 0;
             this.textBox_Right_Sql.Text = "\"Oracle SQL문을 입력하세요.\"";

@@ -21,7 +21,6 @@ namespace Winform_SQL_DB_Project_B
         {
             string str = "";
             string strCoumn = "";
-            string strCoumnType = "";
             for (int i = 1; i< dataGridView.ColumnCount; i++) 
             {
                 str += ','+" ";
@@ -40,7 +39,7 @@ namespace Winform_SQL_DB_Project_B
 
             textBox_Right_Insert.Clear();
         }
-        public void button_Update_auto_fill()
+        public void button_Update_auto_fill() // 이수민
         {
             textBox_Right_Sql.Text = "UPDATE " + tabPage_Middle_datagridview.Text + " SET [속성] = '변경값' WHERE [조건]";
 
