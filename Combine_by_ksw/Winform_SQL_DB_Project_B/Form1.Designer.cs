@@ -102,6 +102,8 @@
             this.imageList_Tree_Icon.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList_Tree_Icon.ImageStream")));
             this.imageList_Tree_Icon.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList_Tree_Icon.Images.SetKeyName(0, "folder.png");
+            this.imageList_Tree_Icon.Images.SetKeyName(1, "Table.png");
+            this.imageList_Tree_Icon.Images.SetKeyName(2, "icon.png");
             // 
             // panel_Middle
             // 
