@@ -29,10 +29,12 @@ namespace Winform_SQL_DB_Project_B
 
             if (errmsg == "1")
             {
+                tabControl_Right_status.SelectedIndex = 0;
                 textBox_Right_status.Text += time_set + " " + textBox_Right_Sql.Text + Environment.NewLine;
             }
             else
             {
+                tabControl_Right_status.SelectedIndex = 1;
                 textBox_Right_error.Text = errmsg;
             }
             DataManager.Cmd_Oracle(textBox_Right_Sql.Text, tabPage_Middle_datagridview.Text);
