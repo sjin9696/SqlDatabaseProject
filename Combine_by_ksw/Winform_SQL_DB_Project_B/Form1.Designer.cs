@@ -170,6 +170,7 @@
             this.textBox_Middle.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox_Middle.Size = new System.Drawing.Size(529, 545);
             this.textBox_Middle.TabIndex = 0;
+            this.textBox_Middle.TextChanged += new System.EventHandler(this.textBox_status_TextChanged);
             // 
             // panel_Right
             // 
@@ -339,6 +340,7 @@
             this.textBox_Right_status.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox_Right_status.Size = new System.Drawing.Size(311, 198);
             this.textBox_Right_status.TabIndex = 0;
+            this.textBox_Right_status.TextChanged += new System.EventHandler(this.textBox_status_TextChanged);
             // 
             // tabPage_Right_error
             // 
@@ -360,6 +362,7 @@
             this.textBox_Right_error.Name = "textBox_Right_error";
             this.textBox_Right_error.Size = new System.Drawing.Size(311, 198);
             this.textBox_Right_error.TabIndex = 0;
+            this.textBox_Right_error.TextChanged += new System.EventHandler(this.textBox_status_TextChanged);
             // 
             // panel_Right_Sql_exec
             // 
@@ -401,6 +404,7 @@
             this.textBox_Right_Sql.Size = new System.Drawing.Size(325, 143);
             this.textBox_Right_Sql.TabIndex = 0;
             this.textBox_Right_Sql.Text = "\"Oracle SQL문을 입력하세요.\"";
+            this.textBox_Right_Sql.TextChanged += new System.EventHandler(this.textBox_status_TextChanged);
             // 
             // panel_Left
             // 

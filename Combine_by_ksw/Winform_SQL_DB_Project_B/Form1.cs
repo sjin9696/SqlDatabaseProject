@@ -148,5 +148,7 @@ namespace Winform_SQL_DB_Project_B
                 textBox_Right_status.Text += time_set + " " + e.Node.Text + "가 선택되었습니다" + Environment.NewLine;
             }
         }
+
+        
     }
 }
