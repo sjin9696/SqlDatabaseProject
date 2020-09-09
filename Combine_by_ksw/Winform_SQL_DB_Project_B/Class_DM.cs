@@ -163,7 +163,7 @@ namespace Winform_SQL_DB_Project_B
 			}
 		}
 		
-		public void Cmd_Oracle(string cmd) // 곽상우 // 이수민 insert 
+		public string Cmd_Oracle(string cmd) // 곽상우,허선용 // 이수민 insert 
 		{
 			try
 			{
@@ -193,11 +193,13 @@ namespace Winform_SQL_DB_Project_B
 				pgOraConn.Close();
 
 				retValue = true;
+				return "1";
 			}
 			catch (Exception e)
 			{
 				retValue = false;
 				Console.WriteLine(e);
+				return e.ToString();
 			}
 		}
 	}

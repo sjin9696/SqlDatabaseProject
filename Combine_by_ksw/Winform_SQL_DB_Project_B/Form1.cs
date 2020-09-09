@@ -22,20 +22,31 @@ namespace Winform_SQL_DB_Project_B
             //dataGridView.DataSource = DataManager.ds.Tables[0];
         }
 
-        private void button_Sql_exec_Click(object sender, EventArgs e) // 곽상우
+        private void button_Sql_exec_Click(object sender, EventArgs e) // 곽상우,허선용
         {
+            string time_set = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
+            string errmsg = DataManager.Cmd_Oracle(textBox_Right_Sql.Text);
+
+            if (errmsg == "1")
+            {
+                textBox_Right_status.Text += time_set + " " + textBox_Right_Sql.Text + Environment.NewLine;
+            }
+            else
+            {
+                textBox_Right_error.Text = errmsg;
+            }
             DataManager.Cmd_Oracle(textBox_Right_Sql.Text);
             dataGridView.DataSource = DataManager.ds.Tables[0];
         }
 
-        private void button_Select_Click(object sender, EventArgs e)
+        private void button_Select_Click(object sender, EventArgs e) // 우종훈
         {
-            button_Select_auto_fill(); //우종훈
+            button_Select_auto_fill();
         }
 
-        private void button_Insert_Click(object sender, EventArgs e)
+        private void button_Insert_Click(object sender, EventArgs e) // 우종훈
         {
-            button_Insert_auto_fill(); //우종훈
+            button_Insert_auto_fill();
         }
 
         private void dataGridView_CellValueChanged(object sender, DataGridViewCellEventArgs e) // 곽상우
@@ -98,12 +109,12 @@ namespace Winform_SQL_DB_Project_B
             textBox4.Text = dataGridView.Rows[rowIndex].Cells[6].Value.ToString();*/
         }
 
-        private void button_Delete_Click(object sender, EventArgs e)
+        private void button_Delete_Click(object sender, EventArgs e) // 우종훈
         {
             button_Delete_auto_fill();
         }
 
-        private void treeView_Left_AfterSelect(object sender, TreeViewEventArgs e) //허선용 -> 곽상우
+        private void treeView_Left_AfterSelect(object sender, TreeViewEventArgs e) // 허선용 -> 곽상우
         {
             if (e.Node.Text == "테이블" || e.Node.Text == "프로시저" || e.Node.Text == "시퀀스")
             {
@@ -124,6 +135,9 @@ namespace Winform_SQL_DB_Project_B
 
                 dataGridView.DataSource = DataManager.ds.Tables[0];
                 textBox_Middle.Text = notice;
+
+                string time_set = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss");
+                textBox_Right_status.Text += time_set + " " + e.Node.Text + "가 선택되었습니다" + Environment.NewLine;
             }
         }
     }

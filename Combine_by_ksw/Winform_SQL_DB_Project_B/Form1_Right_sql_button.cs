@@ -10,14 +10,14 @@ namespace Winform_SQL_DB_Project_B
 {
     public partial class Form1 : Form
     {
-        public void button_Select_auto_fill()
+        public void button_Select_auto_fill() // 이수민
         {
            
             textBox_Right_Sql.Text = "select * from " + tabPage_Middle_datagridview.Text;
             
             textBox_Right_Select.Clear();
         }
-        public void button_Insert_auto_fill()
+        public void button_Insert_auto_fill() // 이수민
         {
             string str = "";
             for (int i = 1; i< dataGridView.ColumnCount; i++) 
@@ -28,7 +28,7 @@ namespace Winform_SQL_DB_Project_B
             textBox_Right_Sql.Text = "Insert into " + tabPage_Middle_datagridview.Text + " values "+"("+str+") --type이 char형식이면 괄호 넣으셔야합니다";
             textBox_Right_Insert.Clear();
         }
-        public void button_Delete_auto_fill()
+        public void button_Delete_auto_fill() // 이수민
         {
             textBox_Right_Sql.Text = "Delete from " + tabPage_Middle_datagridview.Text + " where 조건식" ;
             

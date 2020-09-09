@@ -330,7 +330,7 @@
             // 
             this.textBox_Right_status.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox_Right_status.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox_Right_status.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox_Right_status.ForeColor = System.Drawing.SystemColors.InfoText;
             this.textBox_Right_status.Location = new System.Drawing.Point(3, 3);
             this.textBox_Right_status.Multiline = true;
             this.textBox_Right_status.Name = "textBox_Right_status";
