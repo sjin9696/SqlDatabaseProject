@@ -122,15 +122,23 @@ namespace Winform_SQL_DB_Project_B
             }
             else
             {
-                /*
-                if (e.Node.Parent.Text == "프로시저" || e.Node.Text == "시퀀스")
-                    tabControl_Middle.TabIndex = 1;
-                */
+                if (e.Node.Parent.Text == "프로시저" || e.Node.Parent.Text == "시퀀스")
+                    tabControl_Middle.SelectedIndex = 1;
+                else
+                {
+                    tabControl_Middle.SelectedIndex = 0;
+                }
 
                 textBox_Middle.Text = null;
                 string notice = null;
                 notice = DataManager.Tree_Oracle(e.Node.Text, e.Node.Parent.Text);
-                tabPage_Middle_datagridview.Text = e.Node.Text;
+                if (e.Node.Parent.Text == "프로시저" || e.Node.Parent.Text == "시퀀스")
+                    tabPage_Middle_textbox.Text = e.Node.Text;
+                else
+                {
+                    tabPage_Middle_datagridview.Text = e.Node.Text;
+
+                }
 
 
                 dataGridView.DataSource = DataManager.ds.Tables[0];
