@@ -18,6 +18,7 @@ namespace Winform_SQL_DB_Project_B
         {
             InitializeComponent();
             Form1_TreeView(); //public partial class Form1 : Form
+            Form1_TextBox_status_textChanged(); //public partial class Form1 : Form
             MessageBox.Show(DataManager.Connect_Oracle());
         }
 
