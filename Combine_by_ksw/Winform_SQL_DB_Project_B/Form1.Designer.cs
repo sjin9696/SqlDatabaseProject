@@ -61,6 +61,7 @@
             this.panel_Right_Sql_Text = new System.Windows.Forms.Panel();
             this.textBox_Right_Sql = new System.Windows.Forms.TextBox();
             this.panel_Left = new System.Windows.Forms.Panel();
+            this.timer_update = new System.Windows.Forms.Timer(this.components);
             this.panel_Left_Treeview.SuspendLayout();
             this.panel_Middle.SuspendLayout();
             this.tabControl_Middle.SuspendLayout();
@@ -406,6 +407,11 @@
             this.panel_Left.Size = new System.Drawing.Size(200, 596);
             this.panel_Left.TabIndex = 3;
             // 
+            // timer_update
+            // 
+            this.timer_update.Enabled = true;
+            this.timer_update.Interval = 1000;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -476,6 +482,7 @@
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.TabPage tabPage_Middle_textbox;
         private System.Windows.Forms.TextBox textBox_Middle;
+        private System.Windows.Forms.Timer timer_update;
     }
 }
 

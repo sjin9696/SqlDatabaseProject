@@ -98,3 +98,15 @@ C:\Users\User\source\repos\SqlDatabaseProjectB\Winform_SQL_DB_Project_B\Combine_
 C:\Users\User\source\repos\SqlDatabaseProjectB\Winform_SQL_DB_Project_B\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.csproj.CopyComplete
 C:\Users\User\source\repos\SqlDatabaseProjectB\Winform_SQL_DB_Project_B\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.exe
 C:\Users\User\source\repos\SqlDatabaseProjectB\Winform_SQL_DB_Project_B\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.pdb
+C:\Users\User\Source\Repos\SqlDatabaseProjectB_0909\Combine_by_ksw\Winform_SQL_DB_Project_B\bin\Debug\Winform_SQL_DB_Project_B.exe.config
+C:\Users\User\Source\Repos\SqlDatabaseProjectB_0909\Combine_by_ksw\Winform_SQL_DB_Project_B\bin\Debug\Winform_SQL_DB_Project_B.exe
+C:\Users\User\Source\Repos\SqlDatabaseProjectB_0909\Combine_by_ksw\Winform_SQL_DB_Project_B\bin\Debug\Winform_SQL_DB_Project_B.pdb
+C:\Users\User\Source\Repos\SqlDatabaseProjectB_0909\Combine_by_ksw\Winform_SQL_DB_Project_B\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\User\Source\Repos\SqlDatabaseProjectB_0909\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\SqlDatabaseProjectB_0909\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.Form1.resources
+C:\Users\User\Source\Repos\SqlDatabaseProjectB_0909\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.Properties.Resources.resources
+C:\Users\User\Source\Repos\SqlDatabaseProjectB_0909\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\SqlDatabaseProjectB_0909\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\SqlDatabaseProjectB_0909\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.csproj.CopyComplete
+C:\Users\User\Source\Repos\SqlDatabaseProjectB_0909\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.exe
+C:\Users\User\Source\Repos\SqlDatabaseProjectB_0909\Combine_by_ksw\Winform_SQL_DB_Project_B\obj\Debug\Winform_SQL_DB_Project_B.pdb

@@ -111,6 +111,11 @@ namespace Winform_SQL_DB_Project_B
             }
             else
             {
+                /*
+                if (e.Node.Parent.Text == "프로시저" || e.Node.Text == "시퀀스")
+                    tabControl_Middle.TabIndex = 1;
+                */
+
                 textBox_Middle.Text = null;
                 string notice = null;
                 notice = DataManager.Tree_Oracle(e.Node.Text, e.Node.Parent.Text);

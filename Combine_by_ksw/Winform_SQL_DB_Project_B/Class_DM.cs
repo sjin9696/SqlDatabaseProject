@@ -163,7 +163,7 @@ namespace Winform_SQL_DB_Project_B
 			}
 		}
 		
-		public void Cmd_Oracle(string cmd) // 곽상우
+		public void Cmd_Oracle(string cmd) // 곽상우 // 이수민 insert 
 		{
 			try
 			{
@@ -174,10 +174,23 @@ namespace Winform_SQL_DB_Project_B
 				OracleCommand pgOraCmd = new OracleCommand(cmd, pgOraConn);
 				OracleDataAdapter oda = new OracleDataAdapter(pgOraCmd);
 				DataSet ds_temp = new DataSet();
+
+				if (pgOraCmd.ExecuteNonQuery() == 1)
+				{
+				    Console.WriteLine("insert가 되었습니다.");
+
+				}
+				else
+				{
+					Console.WriteLine("테이블에 아무런 변화가 없습니다.");
+				}
+
+				Connect_Oracle();
 				oda.Fill(ds_temp);
-				pgOraConn.Close();
 
 				ds = ds_temp;
+
+				pgOraConn.Close();
 
 				retValue = true;
 			}
