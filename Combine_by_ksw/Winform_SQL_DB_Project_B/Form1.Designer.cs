@@ -43,10 +43,6 @@
             this.groupBox_Right = new System.Windows.Forms.GroupBox();
             this.panel_Right_DMLs = new System.Windows.Forms.TableLayoutPanel();
             this.button_Delete = new System.Windows.Forms.Button();
-            this.textBox_Right_Select = new System.Windows.Forms.TextBox();
-            this.textBox_Right_Delete = new System.Windows.Forms.TextBox();
-            this.textBox_Right_Insert = new System.Windows.Forms.TextBox();
-            this.textBox_Right_Update = new System.Windows.Forms.TextBox();
             this.button_Updata = new System.Windows.Forms.Button();
             this.button_Insert = new System.Windows.Forms.Button();
             this.button_Select = new System.Windows.Forms.Button();
@@ -62,6 +58,10 @@
             this.textBox_Right_Sql = new System.Windows.Forms.TextBox();
             this.panel_Left = new System.Windows.Forms.Panel();
             this.timer_update = new System.Windows.Forms.Timer(this.components);
+            this.textBox_Right_Delete = new System.Windows.Forms.TextBox();
+            this.textBox_Right_Update = new System.Windows.Forms.TextBox();
+            this.textBox_Right_Insert = new System.Windows.Forms.TextBox();
+            this.textBox_Right_Select = new System.Windows.Forms.TextBox();
             this.panel_Left_Treeview.SuspendLayout();
             this.panel_Middle.SuspendLayout();
             this.tabControl_Middle.SuspendLayout();
@@ -198,8 +198,8 @@
             // panel_Right_DMLs
             // 
             this.panel_Right_DMLs.ColumnCount = 2;
-            this.panel_Right_DMLs.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.05263F));
-            this.panel_Right_DMLs.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.94737F));
+            this.panel_Right_DMLs.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.507837F));
+            this.panel_Right_DMLs.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 97.49216F));
             this.panel_Right_DMLs.Controls.Add(this.button_Delete, 1, 3);
             this.panel_Right_DMLs.Controls.Add(this.textBox_Right_Select, 0, 0);
             this.panel_Right_DMLs.Controls.Add(this.textBox_Right_Delete, 0, 3);
@@ -222,55 +222,20 @@
             // button_Delete
             // 
             this.button_Delete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_Delete.Location = new System.Drawing.Point(197, 99);
+            this.button_Delete.Location = new System.Drawing.Point(11, 99);
             this.button_Delete.Name = "button_Delete";
-            this.button_Delete.Size = new System.Drawing.Size(119, 28);
+            this.button_Delete.Size = new System.Drawing.Size(305, 28);
             this.button_Delete.TabIndex = 1;
             this.button_Delete.Text = "Delete (삭제)기능";
             this.button_Delete.UseVisualStyleBackColor = true;
             this.button_Delete.Click += new System.EventHandler(this.button_Delete_Click);
             // 
-            // textBox_Right_Select
-            // 
-            this.textBox_Right_Select.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox_Right_Select.Location = new System.Drawing.Point(3, 3);
-            this.textBox_Right_Select.Name = "textBox_Right_Select";
-            this.textBox_Right_Select.Size = new System.Drawing.Size(188, 21);
-            this.textBox_Right_Select.TabIndex = 0;
-            // 
-            // textBox_Right_Delete
-            // 
-            this.textBox_Right_Delete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox_Right_Delete.Location = new System.Drawing.Point(3, 99);
-            this.textBox_Right_Delete.Name = "textBox_Right_Delete";
-            this.textBox_Right_Delete.Size = new System.Drawing.Size(188, 21);
-            this.textBox_Right_Delete.TabIndex = 0;
-            // 
-            // textBox_Right_Insert
-            // 
-            this.textBox_Right_Insert.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox_Right_Insert.Location = new System.Drawing.Point(3, 35);
-            this.textBox_Right_Insert.Name = "textBox_Right_Insert";
-            this.textBox_Right_Insert.Size = new System.Drawing.Size(188, 21);
-            this.textBox_Right_Insert.TabIndex = 0;
-            // 
-            // textBox_Right_Update
-            // 
-            this.textBox_Right_Update.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox_Right_Update.Enabled = false;
-            this.textBox_Right_Update.Location = new System.Drawing.Point(3, 67);
-            this.textBox_Right_Update.Name = "textBox_Right_Update";
-            this.textBox_Right_Update.Size = new System.Drawing.Size(188, 21);
-            this.textBox_Right_Update.TabIndex = 0;
-            this.textBox_Right_Update.Text = "\"셀을 수정하고 눌러주세요\"";
-            this.textBox_Right_Update.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // button_Updata
             // 
             this.button_Updata.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_Updata.Location = new System.Drawing.Point(197, 67);
+            this.button_Updata.Location = new System.Drawing.Point(11, 67);
             this.button_Updata.Name = "button_Updata";
-            this.button_Updata.Size = new System.Drawing.Size(119, 26);
+            this.button_Updata.Size = new System.Drawing.Size(305, 26);
             this.button_Updata.TabIndex = 1;
             this.button_Updata.Text = "Updata (수정)기능";
             this.button_Updata.UseVisualStyleBackColor = true;
@@ -279,9 +244,9 @@
             // button_Insert
             // 
             this.button_Insert.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_Insert.Location = new System.Drawing.Point(197, 35);
+            this.button_Insert.Location = new System.Drawing.Point(11, 35);
             this.button_Insert.Name = "button_Insert";
-            this.button_Insert.Size = new System.Drawing.Size(119, 26);
+            this.button_Insert.Size = new System.Drawing.Size(305, 26);
             this.button_Insert.TabIndex = 1;
             this.button_Insert.Text = "Insert (입력)기능";
             this.button_Insert.UseVisualStyleBackColor = true;
@@ -290,9 +255,9 @@
             // button_Select
             // 
             this.button_Select.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button_Select.Location = new System.Drawing.Point(197, 3);
+            this.button_Select.Location = new System.Drawing.Point(11, 3);
             this.button_Select.Name = "button_Select";
-            this.button_Select.Size = new System.Drawing.Size(119, 26);
+            this.button_Select.Size = new System.Drawing.Size(305, 26);
             this.button_Select.TabIndex = 1;
             this.button_Select.Text = "Select (조회)기능";
             this.button_Select.UseVisualStyleBackColor = true;
@@ -418,6 +383,45 @@
             this.timer_update.Enabled = true;
             this.timer_update.Interval = 1000;
             // 
+            // textBox_Right_Delete
+            // 
+            this.textBox_Right_Delete.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox_Right_Delete.Location = new System.Drawing.Point(3, 99);
+            this.textBox_Right_Delete.Name = "textBox_Right_Delete";
+            this.textBox_Right_Delete.Size = new System.Drawing.Size(2, 21);
+            this.textBox_Right_Delete.TabIndex = 0;
+            this.textBox_Right_Delete.Visible = false;
+            // 
+            // textBox_Right_Update
+            // 
+            this.textBox_Right_Update.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox_Right_Update.Enabled = false;
+            this.textBox_Right_Update.Location = new System.Drawing.Point(3, 67);
+            this.textBox_Right_Update.Name = "textBox_Right_Update";
+            this.textBox_Right_Update.Size = new System.Drawing.Size(2, 21);
+            this.textBox_Right_Update.TabIndex = 0;
+            this.textBox_Right_Update.Text = "\"셀을 수정하고 눌러주세요\"";
+            this.textBox_Right_Update.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox_Right_Update.Visible = false;
+            // 
+            // textBox_Right_Insert
+            // 
+            this.textBox_Right_Insert.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox_Right_Insert.Location = new System.Drawing.Point(3, 35);
+            this.textBox_Right_Insert.Name = "textBox_Right_Insert";
+            this.textBox_Right_Insert.Size = new System.Drawing.Size(2, 21);
+            this.textBox_Right_Insert.TabIndex = 0;
+            this.textBox_Right_Insert.Visible = false;
+            // 
+            // textBox_Right_Select
+            // 
+            this.textBox_Right_Select.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox_Right_Select.Location = new System.Drawing.Point(3, 3);
+            this.textBox_Right_Select.Name = "textBox_Right_Select";
+            this.textBox_Right_Select.Size = new System.Drawing.Size(2, 21);
+            this.textBox_Right_Select.TabIndex = 0;
+            this.textBox_Right_Select.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -474,10 +478,6 @@
         private System.Windows.Forms.Button button_Delete;
         private System.Windows.Forms.Button button_Insert;
         private System.Windows.Forms.Button button_Updata;
-        private System.Windows.Forms.TextBox textBox_Right_Delete;
-        private System.Windows.Forms.TextBox textBox_Right_Insert;
-        private System.Windows.Forms.TextBox textBox_Right_Update;
-        private System.Windows.Forms.TextBox textBox_Right_Select;
         private System.Windows.Forms.TableLayoutPanel panel_Right_DMLs;
         private System.Windows.Forms.Button button_Select;
         private System.Windows.Forms.Panel panel_Right_Sql_Text;
@@ -489,6 +489,10 @@
         private System.Windows.Forms.TabPage tabPage_Middle_textbox;
         private System.Windows.Forms.TextBox textBox_Middle;
         private System.Windows.Forms.Timer timer_update;
+        private System.Windows.Forms.TextBox textBox_Right_Select;
+        private System.Windows.Forms.TextBox textBox_Right_Delete;
+        private System.Windows.Forms.TextBox textBox_Right_Insert;
+        private System.Windows.Forms.TextBox textBox_Right_Update;
     }
 }
 
